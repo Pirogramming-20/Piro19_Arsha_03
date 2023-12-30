@@ -6,7 +6,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 60px auto;
+  /* margin: 60px auto; */  
+  /* main에 적용해야할듯 */
   max-width: 1140px;
   font-family: "Open Sans", sans-serif;
 }
