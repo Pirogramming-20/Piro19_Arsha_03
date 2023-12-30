@@ -1,0 +1,11 @@
+#volup {
+  display: flex;
+  gap: 24px;
+  padding: 60px 0;
+}
+#volup > img {
+  display: inline-block;
+  width: 546px;
+  object-fit: contain;
+  max-width: 100%;
+}

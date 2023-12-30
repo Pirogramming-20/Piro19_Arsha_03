@@ -11,9 +11,3 @@ body {
   font-family: "Open Sans", sans-serif;
   background-color: green;
 }
-#volup {
-  display: inline-block;
-  width: 100%;
-  height: 100px;
-  background-color: yellow;
-}
