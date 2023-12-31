@@ -115,3 +115,18 @@
     font-size: 16px;
     font-family: "Open Sans", sans-serif;
   } 
+  input[type="radio"]:checked ~ .eum-qnum-qcontent > .eum-questioncontent {
+    color:#47b2e4;
+  }
+  input[type="radio"]:checked ~ .eum-qnum-qcontent > .eum-questioncontent:hover {
+    color:#73c5eb;
+  }
+  input[type="radio"]:checked ~ .eum-qnum-qcontent > svg {
+    color:#47b2e4;
+    transform: rotate(180deg);
+
+  }
+  input[type="radio"]:checked ~ .eum-qnum-qcontent > eum:hover {
+    color:#73c5eb;
+    transform: rotate(180deg);
+  }
