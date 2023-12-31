@@ -1,0 +1,116 @@
+#eum {
+    display: block;
+    background-color: #f3f5fa;
+    width: 100%;
+  }
+  #eum-container {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    width: min(100%, 1140px);
+    background-color: #f3f5fa; 
+  }
+  #eum-container-left {
+    background-color: #f3f5fa;
+    width: 60%;
+  }
+  #eum-container-left-content {
+    padding: 60px 100px 0px 100px;
+  }
+  #eum-container-left-content > h3 {
+    font-size: 34px;
+    color: #37517e;
+    font-weight: 400; 
+    margin-bottom: 8px;
+  }
+  #eum-container-left-content > p {
+    font-size: 15px;
+    color: #848484;
+    margin-bottom: 16px;
+  }
+  strong {
+    font-weight: bolder;
+  }
+  #eum-container-left-questionbox {
+    padding: 0px 100px 60px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .eum-question {
+    width: 100%;
+    padding: 20px;
+    background: #fff;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    position: relative;
+  }
+  
+  .eum-qnum-qcontent {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .eum-qnum-qcontent > svg {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 5%;
+  }
+  .eum-questionnum {
+    color: #47b2e4;
+    font-weight: 600;
+    font-size: 18px;
+    padding-right: 10px;
+  }
+  .eum-questioncontent {
+    display: block;
+    position: relative;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    padding-right: 30px;
+    outline: none;
+  }
+  .eum-qnum-qcontent {
+    cursor: pointer;
+  }
+  .eum-qnum-qcontent:hover {
+    color: #47b2e4;
+  }
+  #eum-container-right {
+    background-color: #f3f5fa;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #eum-container-right > img {
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+    padding: 0px 12px;
+  }
+  .answer {
+    display: none;
+    padding-top: 10px;
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+    color: #444444;
+  }
+
+  input[type="radio"] {
+    display: none;
+  }
+
+  input[type="radio"]:checked + label + .answer {
+    display: block;
+  }
+  .answer > p {
+    padding: 10px 0 0 0;
+    color:#444444;
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+  } 
