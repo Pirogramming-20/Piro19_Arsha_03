@@ -36,8 +36,8 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        padding: 0px 0px 30px;
-        margin-top: 60px;
+        padding: 0 0 20px;
+        margin: 0 0 20px;
       }
       #faq-header > h2 {
         position: relative;
@@ -81,33 +81,27 @@
       #faq-header > p {
         font-size: 16px;
       }
+      
       #faq-questionbox {
-        gap: 16px;
+        padding: 0px 100px;
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: flex-start;
         flex-direction: column;
-        font-size: 16px;
-        padding: 0px 100px;
-        margin-bottom: 60px;
       }
       .faq-question {
         width: 100%;
-        background-color:#FFFFFF;
-        color: #444444;
         padding: 20px;
-        display: flex;
-        justify-content: flex-start;
-        align-items: flex-start;
-        flex-direction: column;
+        background: #fff;
+        border-radius: 4px;
+        margin-bottom: 15px;
         position: relative;
-        cursor: pointer;
+        
       }
       .faq-qnum-qcontent {
         display: flex;
         justify-content: flex-start;
         align-items: center;
-  
       }
       .faq-qnum-qcontent > svg {
         width: 30px;
@@ -131,7 +125,9 @@
         padding-right: 30px;
         outline: none;
       }
-      
+      .faq-qnum-qcontent {
+        cursor:pointer;
+      }
       .faq-question:hover {
         color: #47b2e4;
       }
@@ -157,11 +153,10 @@
         font-family: "Open Sans", sans-serif;
       } 
     </style>
-    <div id="faq">
+    <section id="faq">
       <div id="faq-container">
       <div id="faq-header">
         <h2>FREQUENTLY ASKED QUESTIONS</h2>
-        <div id="faq-line"></div>
         <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
       </div>
     
@@ -223,6 +218,6 @@
                   </div>
                   </div>
       </div>
-    </div>
+    </section>
   </body>
 </html>
