@@ -1,0 +1,43 @@
+#call {
+  width: 100%;
+  padding: 12rem 0;
+  background: linear-gradient(rgba(40, 58, 90, 0.9), rgba(40, 58, 90, 0.9)),
+    url("../asset/img/call-background.jpg") fixed center center;
+}
+.call-wrapper {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1140px;
+  margin: auto;
+}
+.call-content-wrapper {
+  display: inline-flex;
+  flex-direction: column;
+  width: 75%;
+  gap: 8px;
+  color: white;
+}
+.call-content-wrapper > h3 {
+  font-size: 2.8rem;
+  font-weight: 700;
+}
+.call-content-wrapper > span {
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+.call-button {
+  display: inline-flex;
+  align-items: center;
+  height: 52px;
+  margin: 10px;
+  padding: 12px 40px;
+  font-size: 1.6rem;
+  font-weight: 500;
+  border-radius: 50px;
+  font-family: "Jost", sans-serif;
+  letter-spacing: 1px;
+  border: 2px solid white;
+  color: white;
+  cursor: pointer;
+  transition: 0.5s;
+}
