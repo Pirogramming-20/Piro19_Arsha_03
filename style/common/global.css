@@ -9,6 +9,7 @@ body {
   margin: 60px auto;
   max-width: 1140px;
   font-family: "Open Sans", sans-serif;
+  flex-direction: column;
 }
 h1,
 h2,
