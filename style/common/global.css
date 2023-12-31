@@ -7,7 +7,7 @@ body {
   justify-content: center;
   align-items: center;
   margin: 60px auto;
-  max-width: 1140px;
+  /* max-width: 1140px; */
   font-family: "Open Sans", sans-serif;
 }
 h1,
