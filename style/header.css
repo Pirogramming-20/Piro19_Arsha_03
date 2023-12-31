@@ -28,10 +28,12 @@
 #header-view-mode{
     margin-left: 2rem;
     display: flex;
-    gap:1.2rem
+    gap:1.2rem;
+    font-size: 2rem;
+    color: rgba(255, 255, 255, 0.6);
 }
-#header-view-mode > i{
-    font-size: 1.7rem;
+#header-view-mode > iconify-icon:first-child{
+    color: white;
 }
 #header-center{
     display: flex;
@@ -57,7 +59,7 @@
     flex-direction: row;
     gap: 2rem
 }
-#header-share>i{
+#header-share> i {
     color: rgba(255, 255, 255, 0.6);
     font-size: 1.5rem;
 }
@@ -67,15 +69,15 @@
     justify-content: center;
     align-content: center;
     flex-direction: row;
-    gap: 1rem;
+    gap: 0.5rem;
     background-color: #00b4ff;
-    padding: 0.7rem 2rem;
+    padding: 0.7rem 1rem;
 }
 
-#header-freedown> i{
+#header-freedown> iconify-icon{
     font-size: 2rem;
 }
-#header-freedown> span{
+#header-freedown> div{
     font-size: 1.3rem;
     font-weight: bold;
 }
