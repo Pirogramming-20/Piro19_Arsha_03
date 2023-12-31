@@ -1,0 +1,20 @@
+/*
+.contact-list-left {
+    font-size: 20px;
+    color: #47b2e4;
+    float: left;
+    width: 44px;
+    height: 44px;
+    background: #e7f5fb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .contact-list-left:hover {
+    color: white;
+    background-color: var(--sky-blue);
+  }
+*/
