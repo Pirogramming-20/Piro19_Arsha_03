@@ -39,6 +39,33 @@
         padding: 0px 0px 30px;
         margin-top: 60px;
       }
+      #faq-header > h2 {
+        position: relative;
+        font-size: 32px;
+        font-weight: bold;
+        color: var(--blue);
+        margin-bottom: 40px;
+      }
+      #faq-header > h2::before {
+        content: "";
+        position: absolute;
+        left: calc(50% - 60px);
+        bottom: -20px;
+        display: inline-block;
+        width: 120px;
+        height: 1px;
+        background-color: #ddd;
+      }
+      #faq-header > h2::after {
+        content: "";
+        position: absolute;
+        left: calc(50% - 20px);
+        bottom: -21.5px;
+        display: inline-block;
+        width: 40px;
+        height: 3px;
+        background-color: var(--sky-blue);
+      }
       #faq-title {
         font-size: 32px;
         font-weight: bold;
@@ -133,7 +160,7 @@
     <div id="faq">
       <div id="faq-container">
       <div id="faq-header">
-        <div id="faq-title">FREQUENTLY ASKED QUESTIONS</div>
+        <h2>FREQUENTLY ASKED QUESTIONS</h2>
         <div id="faq-line"></div>
         <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
       </div>
