@@ -12,6 +12,7 @@
     background-color: #023b6d;
     color:white;
     margin: 0;
+    font-family: "Jost", sans-serif;
     
 }
 #header-left{
@@ -78,6 +79,7 @@
     font-size: 2rem;
 }
 #header-freedown> div{
+    justify-content: center;
     font-size: 1.3rem;
     font-weight: bold;
 }

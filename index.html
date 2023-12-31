@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=, initial-scale=1.0"/>
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style/common/reset.css" />
     <link rel="stylesheet" href="./style/common/variables.css" />
     <link rel="stylesheet" href="./style/common/global.css" />
@@ -53,11 +56,32 @@
             <div>Home</div>
             <div>About</div>
             <div>Services</div>
-            <div>Protfolio</div>
+            <div>Portfolio</div>
             <div>Team</div>
             <div id="header-main-drop-down">
-              <div>Drop Down</div>
-              <i class="fa-solid fa-chevron-down"></i>
+              <a href="#">
+                <div>Drop Down</div>
+                <i class="fa-solid fa-chevron-down"></i>
+              </a>
+              <ul>
+                <li>Drop Down 1</li>
+                <li>
+                  <div>
+                    <span>Deep Drop Down</span>
+                    <iconify-icon icon="ooui:next-ltr"></iconify-icon>
+                  </div>
+                  <ul id="header-main-drop-drop-box">
+                    <li>Drop Down 1</li>
+                    <li>Drop Down 2</li>
+                    <li>Drop Down 3</li>
+                    <li>Drop Down 4</li>
+                    <li>Drop Down 5</li>
+                  </ul>
+                </li>
+                <li>Drop Down 2</li>
+                <li>Drop Down 3</li>
+                <li>Drop Down 4</li>
+              </ul>
             </div>
             <div>Contact</div>
             <button>
