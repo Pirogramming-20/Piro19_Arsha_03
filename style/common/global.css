@@ -1,13 +1,18 @@
+* {
+  box-sizing: border-box;
+}
 html {
   font-size: 67.5%;
   min-width: 1300px;
+  margin: auto;
 }
 body {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 60px auto;
-  max-width: 1140px;
+  margin: 60px 0;
+  width: 100%;
   font-family: "Open Sans", sans-serif;
 }
 h1,
