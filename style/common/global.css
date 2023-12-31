@@ -2,6 +2,9 @@ html {
   font-size: 67.5%;
   min-width: 1300px;
 }
+* {
+  box-sizing: border-box;
+}
 body {
   display: flex;
   justify-content: center;
