@@ -30,9 +30,17 @@
   display: flex;
   gap: 1.2rem;
   font-size: 2rem;
+}
+
+#header-view-mode > iconify-icon{
   color: rgba(255, 255, 255, 0.6);
+  transition: color 0.2s ease-in-out;
+
 }
 #header-view-mode > iconify-icon:first-child {
+  color: white;
+}
+#header-view-mode > iconify-icon:hover {
   color: white;
 }
 #header-center {
@@ -45,8 +53,14 @@
 }
 #header-center i {
   color: rgba(255, 255, 255, 0.6);
+  transition: color 0.2s ease-in-out;
   font-size: 1.5rem;
 }
+
+#header-center i:hover{
+  color: white;
+}
+
 #header-title {
   font-weight: bold;
   font-size: 1.6rem;
@@ -61,7 +75,11 @@
 }
 #header-share > i {
   color: rgba(255, 255, 255, 0.6);
+  transition: color 0.1s ease-in-out;
   font-size: 1.5rem;
+}
+#header-share > i:hover{
+  color: white;
 }
 
 #header-freedown {
@@ -72,13 +90,16 @@
   gap: 0.5rem;
   background-color: #00b4ff;
   padding: 0.7rem 1rem;
+  transition: color 0.2s ease-in-out;
 }
-
+#header-freedown:hover{
+  background-color: #23a3df;
+}
 #header-freedown > iconify-icon {
   font-size: 2rem;
 }
 #header-freedown > div {
-  justify-content: center;
+  padding-top: 0.5rem;
   font-size: 1.3rem;
   font-weight: bold;
 }
