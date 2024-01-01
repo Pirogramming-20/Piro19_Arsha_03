@@ -77,7 +77,17 @@
   color: rgba(40, 58, 90, 0.9);
   border-radius: 0.4rem;
   padding: 10px 0;
-  transition: opacity 0.3s ease-in-out, top 0.3s ease-in-out;
+  animation: fadeInUp 0.5s ease-in-out;
+}
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 20%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translateZ(0);
+  }
 }
 #header-main-drop-down:hover > ul,
 #header-main-drop-down > ul:hover {
@@ -114,6 +124,17 @@
   color: rgba(40, 58, 90, 0.9);
   padding: 10px 0;
   border-radius: 0.4rem;
+  animation: slideInRight 0.5s ease-in-out;
+}
+@keyframes slideInRight {
+  0% {
+    opacity: 0;
+    transform: translate3d(-20%, 0, 0); 
+  }
+  to {
+    opacity: 1;
+    transform: translateZ(0);
+  }
 }
 #header-main-drop-down > ul > li:nth-child(2):hover > ul {
   display: block;
