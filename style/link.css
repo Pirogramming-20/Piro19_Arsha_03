@@ -17,7 +17,7 @@
 
 .link-box-title {
   font-size: 16px;
-  margin: 0px 0px 10px;
+  margin: 0px 0px 20px;
   padding: 2px 0px;
   line-height: 1;
   text-transform: uppercase;
@@ -31,16 +31,10 @@
 
 .link-box-info {
   font-size: 14px;
+  font-family: "Jost", sans-serif;
   color: rgb(119, 119, 119);
   transition: all 0.3s ease 0s;
   display: inline-block;
-  line-height: 1;
-}
-
-.lilnk-box-info > .ul {
-  padding-right: 2px;
-  color: #47b2e4;
-  font-size: 18px;
   line-height: 1;
 }
 
@@ -48,6 +42,76 @@
   margin-bottom: 10px;
 }
 
+.link-content > .link-box:first-child > .link-box-info ul li:nth-child(3) {
+  margin-bottom: 30px;
+}
+
+.link-phone,
+.link-email {
+  display: flex;
+  justify-content: flex-start;
+  gap: 5px;
+}
+
+.link-phone :first-child,
+.link-email :first-child {
+  font-weight: bold;
+  color: black;
+}
+
+.link-box-info li i iconify-icon {
+  padding-right: 2px;
+  color: #47b2e4;
+  font-size: 14px;
+  line-height: 1;
+  transform: rotate(90deg);
+}
+
+.link-box-info li {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+  transition: 0.3s;
+}
+
+.link-content .link-box:nth-child(2) li:hover,
+.link-content .link-box:nth-child(3) li:hover {
+  cursor: pointer;
+  color: var(--sky-blue);
+}
+.link-box-info-content {
+  margin-bottom: 20px;
+}
+
+.link-box-icon {
+  font-size: 18px;
+  display: inline-block;
+  background: #47b2e4;
+  color: #fff;
+  line-height: 1;
+  padding: 8px 0;
+  margin-right: 4px;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.link-box-icon:hover {
+  background-color: #209dd8;
+}
+
+.link-box-info-icon ul {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.link-box-info-icon li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 /*
 .contact-list-left {
     font-size: 20px;

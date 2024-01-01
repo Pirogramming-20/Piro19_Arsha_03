@@ -1,0 +1,28 @@
+#bottom {
+  padding: 30px 0;
+  background-color: var(--blue);
+  width: 100%;
+}
+
+.bottom-box {
+  display: flex;
+  justify-content: space-between;
+  max-width: min(100%, 1140px);
+  margin: auto;
+  color: white;
+  font-size: 14px;
+}
+
+.bottom-text2 {
+  display: flex;
+  justify-content: flex-end;
+  gap: 5px;
+}
+
+.bottom-text1 > span {
+  font-weight: bold;
+}
+
+.bottom-text2-2 {
+  color: var(--sky-blue);
+}
