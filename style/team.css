@@ -1,0 +1,177 @@
+#team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 1.2rem;
+  gap: 30px;
+  background-color: #f3f5fa;
+  padding: 60px 0;
+  width: 100%;
+}
+.team-wrapper {
+  max-width: 1140px;
+}
+.team-title-wrapper {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.team-title-wrapper > h2 {
+  position: relative;
+  font-size: 32px;
+  font-weight: bold;
+  color: var(--blue);
+  margin-bottom: 40px;
+}
+.team-title-wrapper > h2::before {
+  content: "";
+  position: absolute;
+  left: calc(50% - 60px);
+  bottom: -20px;
+  display: inline-block;
+  width: 120px;
+  height: 1px;
+  background-color: #ddd;
+}
+.team-title-wrapper > h2::after {
+  content: "";
+  position: absolute;
+  left: calc(50% - 20px);
+  bottom: -21.5px;
+  display: inline-block;
+  width: 40px;
+  height: 3px;
+  background-color: var(--sky-blue);
+}
+.team-title-wrapper > span {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  color: #444444;
+}
+.team-card-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 24px;
+}
+.team-card {
+  display: flex;
+  position: relative;
+  gap: 30px;
+  padding: 30px;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  height: 100%;
+  background-color: white;
+  animation-duration: 0.5s;
+  animation-name: hover-down;
+  animation-timing-function: ease-in-out;
+}
+.team-card > img {
+  display: inline-block;
+  width: 145px;
+  height: 145px;
+  border-radius: 50%;
+}
+.team-card-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: calc(100% - 195px);
+}
+.team-card-content-wrapper > h4 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--blue);
+}
+.team-card-content-wrapper > span {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #444444;
+}
+.team-card-position {
+  position: relative;
+  padding-bottom: 10px;
+}
+.team-card-position::after {
+  content: "";
+  display: inline-block;
+  width: 50px;
+  height: 1px;
+  background: #cbd6e9;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  margin: 5px 0;
+}
+.team-card-sns-wrapper {
+  display: inline-flex;
+  gap: 8px;
+}
+.team-card-sns-wrapper > i {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #eff2f8;
+  transition: ease-in-out 0.3s;
+}
+.twitter-icon {
+  background-image: url("../asset/svg/twitter-blue.svg");
+  background-size: 16px 16px;
+  background-position: 8px 8px;
+  background-repeat: no-repeat;
+}
+.facebook-icon {
+  background-image: url("../asset/svg/facebook-blue.svg");
+  background-size: 16px 16px;
+  background-position: 8px 8px;
+  background-repeat: no-repeat;
+}
+.instagram-icon {
+  background-image: url("../asset/svg/instagram-blue.svg");
+  background-size: 16px 16px;
+  background-position: 8px 8px;
+  background-repeat: no-repeat;
+}
+.linkedin-icon {
+  background-image: url("../asset/svg/linkedin-blue.svg");
+  background-size: 16px 16px;
+  background-position: 8px 8px;
+  background-repeat: no-repeat;
+}
+.team-card:hover {
+  top: -10px;
+  animation-duration: 0.5s;
+  animation-name: hover-up;
+  animation-timing-function: ease-in-out;
+}
+.team-card-sns-wrapper > i:hover {
+  background-color: var(--blue);
+}
+.twitter-icon:hover {
+  background-image: url("../asset/svg/twitter-white.svg");
+}
+.instagram-icon:hover {
+  background-image: url("../asset/svg/instagram-white.svg");
+}
+.facebook-icon:hover {
+  background-image: url("../asset/svg/facebook-white.svg");
+}
+.linkedin-icon:hover {
+  background-image: url("../asset/svg/linkedin-white.svg");
+}
+@keyframes hover-up {
+  from {
+    top: 0px;
+  }
+  to {
+    top: -10px;
+  }
+}
+@keyframes hover-down {
+  from {
+    top: -10px;
+  }
+  to {
+    top: 0px;
+  }
+}
