@@ -95,7 +95,7 @@ strong {
   object-fit: cover;
   padding: 0px 12px;
 }
-.answer {
+.eum-answer {
   max-height: 0;
   opacity: 0;
   overflow: hidden;
@@ -110,12 +110,12 @@ input[type="radio"] {
   display: none;
 }
 
-input[type="radio"]:checked + label + .answer {
+input[type="radio"]:checked + label + .eum-answer {
   max-height: 200px;
   opacity: 1;
   padding-top: 10px;
 }
-.answer > p {
+.eum-answer > p {
   padding: 10px 0 0 0;
   color: #444444;
   font-size: 16px;

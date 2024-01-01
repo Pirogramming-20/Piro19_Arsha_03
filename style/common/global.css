@@ -6,12 +6,9 @@ html {
   min-width: 1300px;
   margin: auto;
 }
-* {
-  box-sizing: border-box;
-}
+
 body {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
