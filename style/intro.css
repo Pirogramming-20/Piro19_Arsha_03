@@ -1,0 +1,94 @@
+#intro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #37517e;
+    width: 100%;
+    color: white;
+    padding-top: 10rem;
+    padding-bottom: 5rem;
+    padding: 6rem auto;
+}
+#intro-container{
+    max-width: 1140px;
+    display: flex;
+    align-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#intro-left{
+    display: flex;
+    flex-wrap: wrap;
+    width: 57rem;
+    margin-top: 10rem;
+    flex-direction: column;
+}
+#intro-left>h1{
+    margin: 0 0 10px 0;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56px;
+    color: #fff;
+}
+#intro-left>h2{
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 50px;
+    font-size: 2.6rem;
+}
+#intro-button{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-direction: row;
+}
+#intro-button>button{
+    font-weight: 500;
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 10px 28px 11px 28px;
+    border: none;
+    border-radius: 50px;
+    transition: 0.5s;
+    color: #fff;
+    background: #47b2e4;
+}
+#intro-button>button:hover{
+    background-color: #209dd8;
+}
+#intro-button>div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#intro-button > div > svg {
+    margin-left: 2rem;
+    transition: 0.3s;
+    margin-right: .5rem;
+}
+#intro-button > div > svg g{
+    stroke: white;
+}
+#intro-button > div > svg:hover g{
+    stroke: #47b2e4;
+}
+#intro-button > div>span{
+    font-size: 1.6rem;
+}
+#intro-right{
+    margin-left: 0.2rem;
+}
+#intro-right>img{
+    height: 40rem;
+    animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+@keyframes up-down {
+    from {
+      /* 시작 스타일 */
+    transform: translateY(0);
+    }
+    to {
+      /* 종료 스타일 */
+    transform: translateY(20px);
+    }
+}
