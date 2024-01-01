@@ -7,8 +7,12 @@
   min-width: 1140px;
   margin: 0;
   background-color: rgba(40, 58, 90, 0.9);
+  transition: background-color 0.3s ease-in-out;
   font-family: "Jost", sans-serif;
 }
+/* #header-main.scrolled {
+  background-color: rgba(40, 58, 90, 0.9); 
+} */
 #header-main {
   display: flex;
   flex-direction: row;
