@@ -1,5 +1,8 @@
 #join {
   background-color: #f3f5fa;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .join-box {

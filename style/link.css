@@ -1,8 +1,14 @@
+#link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .link-content {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   padding: 60px 0 30px;
   gap: 10px;
+  width: min(100%, 1140px);
 }
 
 .link-content > div {
