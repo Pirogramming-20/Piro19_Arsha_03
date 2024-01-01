@@ -22,7 +22,7 @@
     overflow: hidden;
     animation: fadeUp linear;
     animation-timeline: view();
-    animation-range: entry 30% cover 30%;
+    animation-range: entry 0% cover 30%;
     
   }
   #faq-header > h2 {
@@ -73,7 +73,7 @@
     overflow: hidden;
     animation: fadeUp linear;
     animation-timeline: view();
-    animation-range: entry 30% cover 30%;
+    animation-range: entry 0% cover 30%;
 
     padding: 0px 100px;
     display: flex;

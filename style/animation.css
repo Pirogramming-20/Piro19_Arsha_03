@@ -1,15 +1,25 @@
-
 @keyframes fadeUp {
-    from {
-      opacity: 0;
-      transform: translateY(100%);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
   }
-
+  25% {
+    opacity: 0.15;
+    transform: translateY(50%);
+  }
+  50% {
+    opacity: 0.25;
+    transform: translateY(25%);
+  }
+  75% {
+    opacity: 0.5;
+    transform: translateY(10%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
   @keyframes expandImage {
     from {
       width: 50%;
