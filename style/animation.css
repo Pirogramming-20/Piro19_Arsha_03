@@ -1,0 +1,29 @@
+
+@keyframes fadeUp {
+    from {
+      opacity: 0;
+      transform: translateY(100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes expandImage {
+    from {
+      width: 50%;
+      height: 50%; 
+    }
+    to {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  @keyframes moveFromSide {
+    to {
+      opacity: 1; 
+      transform: translateY(0) translateX(0); 
+    }
+  }

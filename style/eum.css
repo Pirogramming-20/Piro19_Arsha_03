@@ -21,7 +21,9 @@
 #eum-container-left-content {
   padding: 60px 0px 0px 0px;
   overflow: hidden;
-  animation: showContent 1s ease-out;
+  animation: fadeUp linear;
+  animation-timeline: view();
+  animation-range: entry 30% cover 30%;
 }
 #eum-container-left-content > h3 {
   font-size: 34px;
@@ -45,7 +47,19 @@ strong {
   flex-direction: column;
   
   overflow: hidden;
-  animation: showContent 1s ease-out;
+  animation: fadeUp linear;
+  animation-timeline: view();
+  animation-range: entry 30% cover 30%;
+
+  /* 오른쪽 아래에서 오는 것 
+  opacity: 0;  초기에 투명하게 설정 
+  transform: translateY(10vh) translateX(10vw);  오른쪽 대각선 아래로 이동 
+  animation: moveFromSide 1s ease-out forwards; */
+
+  /* 왼쪽 아래에서 오는 것
+  opacity: 0;
+  transform: translateY(10vh) translate(-10vw);
+  animation: moveFromSide 1s ease-out forwards;  */
 }
 .eum-question {
   width: 100%;
@@ -101,6 +115,9 @@ strong {
   height: 100%;
   object-fit: cover;
   padding: 0px 12px;
+  animation: expandImage linear;
+  animation-timeline: view();
+  animation-range: entry 30% cover 30%;
 }
 .eum-answer {
   max-height: 0;
@@ -143,18 +160,3 @@ input[type="radio"]:checked ~ .eum-qnum-qcontent > eum:hover {
   transform: rotate(180deg);
 }
 
-
-@keyframes showContent {
-  0% {
-    opacity: 0;
-    transform: translateY(100%);
-  }
-  50% {
-    opacity: 0.5;
-    transform: translateY(50%);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
