@@ -6,6 +6,9 @@ html {
   min-width: 1300px;
   margin: auto;
 }
+* {
+  box-sizing: border-box;
+}
 body {
   display: flex;
   flex-direction: column;
@@ -13,6 +16,7 @@ body {
   align-items: center;
   width: 100%;
   font-family: "Open Sans", sans-serif;
+  flex-direction: column;
 }
 h1,
 h2,
