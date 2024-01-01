@@ -47,7 +47,25 @@
   display: inline-block;
   width: 100%;
   height: 10px;
+  background-color: #e8edf5;
+}
+#volup-100-percent,
+#volup-90-percent,
+#volup-75-percent,
+#volup-55-percent {
+  position: absolute;
+  top: 18px;
+  left: 0;
   background-color: #4668a2;
+}
+#volup-90-percent {
+  width: 90%;
+}
+#volup-75-percent {
+  width: 75%;
+}
+#volup-55-percent {
+  width: 55%;
 }
 .volup-percent-value {
   position: absolute;
