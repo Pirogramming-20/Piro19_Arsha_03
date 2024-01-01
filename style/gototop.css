@@ -1,0 +1,39 @@
+.GoToTop {
+    text-decoration: none;
+    background-color: #47b2e4;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    animation: GoToTopswitch 1.2s linear; 
+    animation-timeline: scroll();
+  }
+  .GoToTop:hover {
+    background-color: #6bc1e9;
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    right: 15px;
+    bottom: 15px;
+  }
+  .GoToTop > svg {
+    color: white;
+    width: 24px;
+    height: 24px;
+  }
+
+  @keyframes GoToTopswitch {
+    0% {
+     opacity:0;
+    }
+    5% {
+       opacity:1;
+    }
+  }
+  
