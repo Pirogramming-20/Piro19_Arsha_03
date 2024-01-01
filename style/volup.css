@@ -11,6 +11,14 @@
   width: 546px;
   object-fit: contain;
   max-width: 100%;
+  animation: fadeUp linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 30%;
+  opacity: 0;
+  transform: translateY(10vh) translateX(-10vw);
+  animation: moveFromSide 1s linear forwards;
+  animation-timeline: view();
+  animation-range: entry 0% cover 30%;
 }
 .volup-title {
   font-size: 3.2rem;
@@ -30,6 +38,14 @@
   display: flex;
   flex-direction: column;
   gap: 2.4rem;
+  animation: fadeUp linear;
+  animation-timeline: view();
+  animation-range: entry 30% cover 30%;
+  opacity: 0;
+  transform: translateY(10vh) translateX(10vw);
+  animation: moveFromSide 1s ease-out forwards;
+  animation-timeline: view();
+  animation-range: entry 30% cover 30%;
 }
 .volup-percent {
   display: flex;
@@ -93,12 +109,30 @@
   to {
     width: 100%;
   }
+  0% {
+    width: 0%;
+  }
+  30% {
+    width: 100%;
+  }
+  100% {
+    width: 100%;
+  }
 }
 @keyframes progress-90-bar {
   from {
     width: 0%;
   }
   to {
+    width: 90%;
+  }
+  0% {
+    width: 0%;
+  }
+  30% {
+    width: 90%;
+  }
+  100% {
     width: 90%;
   }
 }
@@ -109,6 +143,15 @@
   to {
     width: 75%;
   }
+  0% {
+    width: 0%;
+  }
+  30% {
+    width: 75%;
+  }
+  100% {
+    width: 75%;
+  }
 }
 @keyframes progress-55-bar {
   from {
@@ -116,5 +159,35 @@
   }
   to {
     width: 55%;
+  }
+  0% {
+    width: 0%;
+  }
+  30% {
+    width: 55%;
+  }
+  100% {
+    width: 55%;
+  }
+}
+@keyframes moveFromSide-30 {
+  from {
+    opacity: 0;
+    transform: translateY(10vh) translate(-10vw);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) translateX(0);
+  }
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+    transform: translateY(0) translateX(0);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) translateX(0);
   }
 }

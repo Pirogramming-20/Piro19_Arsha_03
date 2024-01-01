@@ -14,6 +14,9 @@
 .team-title-wrapper {
   text-align: center;
   margin-bottom: 30px;
+  animation: fadeUp linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 30%;
 }
 .team-title-wrapper > h2 {
   position: relative;
@@ -61,9 +64,26 @@
   border-radius: 5px;
   height: 100%;
   background-color: white;
-  animation-duration: 0.5s;
-  animation-name: hover-down;
-  animation-timing-function: ease-in-out;
+  cursor: pointer;
+  animation: fadeUp 1s ease-out forwards;
+  animation-timeline: view();
+  animation-range: entry 0% cover 30%;
+}
+.team-card:nth-child(2),
+.team-card:nth-child(4) {
+  opacity: 0;
+  transform: translateY(10vh) translateX(10vw);
+  animation: moveFromSide 1s ease-out forwards;
+  animation-timeline: view();
+  animation-range: entry 0% cover 20%;
+}
+.team-card:nth-child(1),
+.team-card:nth-child(3) {
+  opacity: 0;
+  transform: translateY(10vh) translateX(-10vw);
+  animation: moveFromSide 1s ease-out forwards;
+  animation-timeline: view();
+  animation-range: entry 0% cover 20%;
 }
 .team-card > img {
   display: inline-block;
@@ -139,10 +159,9 @@
   background-repeat: no-repeat;
 }
 .team-card:hover {
-  top: -10px;
-  animation-duration: 0.5s;
-  animation-name: hover-up;
-  animation-timing-function: ease-in-out;
+  opacity: 1;
+  transform: translateY(-10px) translateX(0);
+  transition: ease-in-out 0.3s;
 }
 .team-card-sns-wrapper > i:hover {
   background-color: var(--blue);
@@ -161,10 +180,10 @@
 }
 @keyframes hover-up {
   from {
-    top: 0px;
+    transform: translateY(0px) translateX(0);
   }
   to {
-    top: -10px;
+    transform: translateY(-10px) translateX(0);
   }
 }
 @keyframes hover-down {
