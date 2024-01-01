@@ -95,7 +95,15 @@
     color: #47b2e4;
     font-weight: 600;
     font-size: 18px;
-    padding-right: 10px;
+    padding: 0; /* 패딩을 0으로 설정하여 물음표 내부 공간 제거 */
+    display: inline-flex;
+    justify-content: center; /* 수평 가운데 정렬 */
+    align-items: center; /* 수직 가운데 정렬 */
+    width: 24px;
+    height: 24px;
+    border: 2px solid #47b2e4;
+    border-radius: 50%;
+    margin-right: 10px;
   }
   .faq-questioncontent {
     display: block;
