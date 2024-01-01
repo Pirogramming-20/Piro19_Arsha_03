@@ -10,6 +10,8 @@
   }
   #faq-container {
     max-width: 1140px;
+    overflow: hidden;
+    animation: showContent 1s ease-out;
   }
   #faq-header {
     display: flex;
@@ -18,6 +20,12 @@
     flex-direction: column;
     padding: 0 0 20px;
     margin: 0 0 20px;
+
+    overflow: hidden;
+    animation: showContent linear both;
+    animation-timeline: view();
+    animation-range: entry 50% cover 50%;
+    
   }
   #faq-header > h2 {
     position: relative;
@@ -64,6 +72,9 @@
   }
   
   #faq-questionbox {
+    overflow: hidden;
+    animation: showContent 1s ease-out;
+
     padding: 0px 100px;
     display: flex;
     justify-content: center;
@@ -95,10 +106,10 @@
     color: #47b2e4;
     font-weight: 600;
     font-size: 18px;
-    padding: 0; /* 패딩을 0으로 설정하여 물음표 내부 공간 제거 */
+    padding: 0; 
     display: inline-flex;
-    justify-content: center; /* 수평 가운데 정렬 */
-    align-items: center; /* 수직 가운데 정렬 */
+    justify-content: center; 
+    align-items: center; 
     width: 24px;
     height: 24px;
     border: 2px solid #47b2e4;
@@ -129,7 +140,7 @@
     font-size: 16px;
     font-family: "Open Sans", sans-serif;
     color: #444444;
-    transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    transition: max-height 0.6s ease-out, opacity 0.6s ease-out;
   }
 
   input[type="radio"] {
@@ -165,3 +176,15 @@
     font-family: "Open Sans", sans-serif;
  
   } 
+
+
+  @keyframes showContent {
+    from {
+      opacity: 0;
+      transform: translateY(100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }

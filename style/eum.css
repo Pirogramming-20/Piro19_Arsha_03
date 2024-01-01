@@ -10,6 +10,8 @@
   gap: 30px;
   justify-content: center;
   align-items: center;
+  
+
 }
 #eum-container-left {
   background-color: #f3f5fa;
@@ -18,6 +20,8 @@
 }
 #eum-container-left-content {
   padding: 60px 0px 0px 0px;
+  overflow: hidden;
+  animation: showContent 1s ease-out;
 }
 #eum-container-left-content > h3 {
   font-size: 34px;
@@ -39,6 +43,9 @@ strong {
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
+  
+  overflow: hidden;
+  animation: showContent 1s ease-out;
 }
 .eum-question {
   width: 100%;
@@ -134,4 +141,20 @@ input[type="radio"]:checked ~ .eum-qnum-qcontent > svg {
 input[type="radio"]:checked ~ .eum-qnum-qcontent > eum:hover {
   color: #73c5eb;
   transform: rotate(180deg);
+}
+
+
+@keyframes showContent {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  50% {
+    opacity: 0.5;
+    transform: translateY(50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
