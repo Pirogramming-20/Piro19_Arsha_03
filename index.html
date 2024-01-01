@@ -2,11 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=
-    , initial-scale=1.0"
-    />
+    <meta name="viewport" content="width=, initial-scale=1.0"/>
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -25,6 +21,88 @@
     <link rel="stylesheet" href="./style/common/reset.css" />
     <link rel="stylesheet" href="./style/common/variables.css" />
     <link rel="stylesheet" href="./style/common/global.css" />
+    <link rel="stylesheet" href="./style/header.css">
+    <link rel="stylesheet" href="./style/header-main.css">
+    <script src="https://kit.fontawesome.com/5658349e28.js" crossorigin="anonymous"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
   </head>
-  <body></body>
+  <body>
+    <header id="header">
+      <div id="header-left">
+        <div id="header-logo">
+          <img alt="BootstrapMade" src="https://bootstrapmade.com/assets/img/logo.png">
+        </div>
+        <div id="header-view-mode">
+          <iconify-icon icon="tdesign:desktop"></iconify-icon>
+          <iconify-icon icon="tdesign:mobile"></iconify-icon>
+          <iconify-icon icon="tdesign:mobile"></iconify-icon>
+        </div>
+      </div>
+      <div id="header-center">
+        <div id="header-arrow-left-icon">
+          <i class="fa-solid fa-chevron-left"></i>
+        </div>
+        <div id="header-title">Arsha</div>
+        <div id="header-arrow-right-icon">
+          <i class="fa-solid fa-chevron-right"></i>
+        </div>
+      </div>
+      <div id="header-right">
+        <div id="header-share">
+          <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </div>
+        <div id="header-freedown">
+          <iconify-icon icon="material-symbols:download-sharp"></iconify-icon>
+          <div>FREE DOWNLOAD</div>
+        </div>
+      </div>
+    </header>
+
+    <div></div>
+    <div id="header-container">
+      <div id="header-main-container">
+        <header id="header-main">
+          <div id="header-main-title">
+            <span>ARSHA</span>
+          </div>
+          <div id="header-main-menu">
+            <div>Home</div>
+            <div>About</div>
+            <div>Services</div>
+            <div>Portfolio</div>
+            <div>Team</div>
+            <div id="header-main-drop-down">
+              <a href="#">
+                <div>Drop Down</div>
+                <i class="fa-solid fa-chevron-down"></i>
+              </a>
+              <ul>
+                <li>Drop Down 1</li>
+                <li>
+                  <div>
+                    <span>Deep Drop Down</span>
+                    <iconify-icon icon="ooui:next-ltr"></iconify-icon>
+                  </div>
+                  <ul id="header-main-drop-drop-box">
+                    <li>Drop Down 1</li>
+                    <li>Drop Down 2</li>
+                    <li>Drop Down 3</li>
+                    <li>Drop Down 4</li>
+                    <li>Drop Down 5</li>
+                  </ul>
+                </li>
+                <li>Drop Down 2</li>
+                <li>Drop Down 3</li>
+                <li>Drop Down 4</li>
+              </ul>
+            </div>
+            <div>Contact</div>
+            <button>
+              Get Started
+            </button>
+          </div>
+        </header>
+      </div>
+    </div>
+  </body>
 </html>
