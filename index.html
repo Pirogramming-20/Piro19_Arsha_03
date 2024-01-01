@@ -39,56 +39,99 @@
             fugiat sit in iste officiis commodi quidem hic quas.</span
           >
         </div>
-        <div class="portfolio-select-wrapper">
-          <label class="portfolio-select-label" for="portfolio-select-all">
-            <span>All</span>
-            <input
-              type="radio"
-              id="portfolio-select-all"
-              class="blind"
-              checked
-            />
-          </label>
-          <label class="portfolio-select-label" for="portfolio-select-app">
-            <span>App</span>
-            <input type="radio" id="portfolio-select-app" class="blind" />
-          </label>
-          <label class="portfolio-select-label" for="portfolio-select-card">
-            <span>Card</span>
-            <input type="radio" id="portfolio-select-card" class="blind" />
-          </label>
-          <label class="portfolio-select-label" for="portfolio-select-web">
-            <input type="radio" id="portfolio-select-web" class="blind" />
-            <span>Web</span>
-          </label>
-        </div>
-        <div class="portfolio-image-wrapper">
-          <div class="portfolio-image">
-            <img id="portfolio-app-1" src="./asset/img/app-1.jpg" />
+        <div class="portfolio-wrapper">
+          <input
+            type="radio"
+            name="portfolio-select"
+            id="portfolio-select-all"
+            class="blind"
+            checked
+          />
+          <input
+            type="radio"
+            name="portfolio-select"
+            id="portfolio-select-app"
+          />
+          <input
+            type="radio"
+            name="portfolio-select"
+            id="portfolio-select-card"
+          />
+          <input
+            type="radio"
+            name="portfolio-select"
+            id="portfolio-select-web"
+          />
+          <div class="portfolio-select-wrapper">
+            <label for="portfolio-select-all" id="test">All</label>
+            <label for="portfolio-select-app">App</label>
+            <label for="portfolio-select-card">Card</label>
+            <label for="portfolio-select-web">Web</label>
           </div>
-          <div class="portfolio-image">
-            <img id="portfolio-app-2" src="./asset/img/app-2.jpg" />
-          </div>
-          <div class="portfolio-image">
-            <img id="portfolio-app-3" src="./asset/img/app-3.jpg" />
-          </div>
-          <div class="portfolio-image">
-            <img id="portfolio-card-1" src="./asset/img/card-1.jpg" />
-          </div>
-          <div class="portfolio-image">
-            <img id="portfolio-card-2" src="./asset/img/card-2.jpg" />
-          </div>
-          <div class="portfolio-image">
-            <img id="portfolio-card-3" src="./asset/img/card-3.jpg" />
-          </div>
-          <div class="portfolio-image">
-            <img id="portfolio-web-1" src="./asset/img/web-1.jpg" />
-          </div>
-          <div class="portfolio-image">
-            <img id="portfolio-web-2" src="./asset/img/web-2.jpg" />
-          </div>
-          <div class="portfolio-image">
-            <img id="portfolio-web-3" src="./asset/img/web-3.jpg" />
+          <div class="portfolio-image-wrapper">
+            <div class="portfolio-image portfolio-image-app">
+              <img
+                id="portfolio-app-1"
+                class="portfolio-image-app"
+                src="./asset/img/app-1.jpg"
+              />
+            </div>
+            <div class="portfolio-image portfolio-image-app">
+              <img
+                id="portfolio-app-3"
+                class="portfolio-image-app"
+                src="./asset/img/app-3.jpg"
+              />
+            </div>
+            <div class="portfolio-image portfolio-image-web">
+              <img
+                id="portfolio-web-1"
+                class="portfolio-image-web"
+                src="./asset/img/web-1.jpg"
+              />
+            </div>
+            <div class="portfolio-image portfolio-image-web">
+              <img
+                id="portfolio-web-2"
+                class="portfolio-image-web"
+                src="./asset/img/web-2.jpg"
+              />
+            </div>
+            <div class="portfolio-image portfolio-image-web">
+              <img
+                id="portfolio-web-3"
+                class="portfolio-image-web"
+                src="./asset/img/web-3.jpg"
+              />
+            </div>
+            <div class="portfolio-image portfolio-image-app">
+              <img
+                id="portfolio-app-2"
+                class="portfolio-image-app"
+                src="./asset/img/app-2.jpg"
+              />
+            </div>
+            <div class="portfolio-image portfolio-image-card">
+              <img
+                id="portfolio-card-2"
+                class="portfolio-image-card"
+                src="./asset/img/card-2.jpg"
+              />
+            </div>
+            <div class="portfolio-image portfolio-image-card">
+              <img
+                id="portfolio-card-1"
+                class="portfolio-image-card"
+                src="./asset/img/card-1.jpg"
+              />
+            </div>
+            <div class="portfolio-image portfolio-image-card">
+              <img
+                id="portfolio-card-3"
+                class="portfolio-image-card"
+                src="./asset/img/card-3.jpg"
+              />
+            </div>
           </div>
         </div>
       </div>
