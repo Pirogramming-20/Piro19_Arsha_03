@@ -6,8 +6,10 @@
   width: 100%;
   min-width: 1140px;
   margin: 0;
-  background-color: rgba(40, 58, 90, 0.9);
   font-family: "Jost", sans-serif;
+  background-color: rgba(40, 58, 90, 0.9);
+  animation: background-switch 1.2s linear; 
+  animation-timeline: scroll();
 }
 #header-main {
   display: flex;
@@ -18,7 +20,8 @@
   margin-left: 15rem;
   width: min(100%, 1140px);
   margin: 0 auto;
-  color: white;
+  color: white;   
+
 }
 #header-main-menu {
   display: flex;
@@ -156,4 +159,12 @@
 }
 #header-main-menu > button:hover {
   background-color: #47b2e4;
+}
+@keyframes background-switch {
+  0% {
+    background-color: transparent;
+  }
+  5% {
+    background-color: rgba(40, 58, 90, 0.9);
+  }
 }

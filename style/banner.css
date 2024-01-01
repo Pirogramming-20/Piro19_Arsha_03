@@ -14,6 +14,7 @@
   justify-content: center;
   max-width: 1140px;
   gap: 5rem;
+  animation: Scale 0.7s ease-in-out; 
 }
 #banner-container > div > img {
   width: 15rem;

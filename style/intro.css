@@ -27,7 +27,10 @@
   width: 57rem;
   margin-top: 10rem;
   flex-direction: column;
+  animation: fadeInUp 0.5s ease-in-out;
 }
+
+
 #intro-left > h1 {
   margin: 0 0 10px 0;
   font-size: 48px;
@@ -84,6 +87,7 @@
 }
 #intro-right {
   margin-left: 0.2rem;
+  animation: Scale 0.5s ease-in-out; 
 }
 #intro-right > img {
   height: 43rem;
@@ -91,11 +95,29 @@
 }
 @keyframes up-down {
   from {
-    /* 시작 스타일 */
     transform: translateY(0);
   }
   to {
-    /* 종료 스타일 */
     transform: translateY(20px);
+  }
+}
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 20%, 0);  
+  }
+  to {
+    opacity: 1;
+    transform: translateZ(0);
+  }
+}
+@keyframes Scale {
+  0% {
+    opacity: 0;
+    transform: scale(0.5); 
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
   }
 }
