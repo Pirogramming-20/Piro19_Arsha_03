@@ -47,10 +47,74 @@
   display: inline-block;
   width: 100%;
   height: 10px;
+  background-color: #e8edf5;
+}
+#volup-100-percent,
+#volup-90-percent,
+#volup-75-percent,
+#volup-55-percent {
+  position: absolute;
+  top: 18px;
+  left: 0;
   background-color: #4668a2;
+}
+#volup-100-percent {
+  animation: progress-100-bar linear;
+  animation-timeline: view();
+  animation-range: entry 50% cover 50%;
+}
+#volup-90-percent {
+  animation: progress-90-bar linear;
+  animation-timeline: view();
+  animation-range: entry 50% cover 50%;
+  width: 90%;
+}
+#volup-75-percent {
+  animation: progress-75-bar linear;
+  animation-timeline: view();
+  animation-range: entry 50% cover 50%;
+  width: 75%;
+}
+#volup-55-percent {
+  animation: progress-55-bar linear;
+  animation-timeline: view();
+  animation-range: entry 50% cover 50%;
+  width: 55%;
 }
 .volup-percent-value {
   position: absolute;
   top: 0;
   right: 0;
+}
+@keyframes progress-100-bar {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes progress-90-bar {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 90%;
+  }
+}
+@keyframes progress-75-bar {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 75%;
+  }
+}
+@keyframes progress-55-bar {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 55%;
+  }
 }
