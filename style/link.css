@@ -43,6 +43,11 @@
   font-size: 18px;
   line-height: 1;
 }
+
+.link-content > .link-box:first-child > .link-box-info ul li {
+  margin-bottom: 10px;
+}
+
 /*
 .contact-list-left {
     font-size: 20px;
